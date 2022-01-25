@@ -1,3 +1,20 @@
 {
-    "clientes": []
+  "clientes": [
+    {
+      "nombre": "Dany",
+      "empresa": "Tour",
+      "email": "correo@correo.com",
+      "telefono": "5456465465",
+      "notas": "Hola",
+      "id": 1
+    },
+    {
+      "nombre": "Lety",
+      "empresa": "Pape",
+      "email": "correo@gmail.com",
+      "telefono": "797 100 3932",
+      "notas": "",
+      "id": 5
+    }
+  ]
 }
