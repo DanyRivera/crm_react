@@ -28,6 +28,30 @@ const Inicio = () => {
 
     }, []);
 
+    const handleEliminar = async id => {
+        const confirmar = confirm('Deseas Eliminar este cliente?');
+
+        if (confirmar) {
+            try {
+                //Eliminar un registro
+                const url = `${import.meta.env.VITE_API_URL}/${id}`;
+
+                const respuesta = await fetch(url, {
+                    method: 'DELETE'
+                });
+
+                await respuesta.json();
+
+                //Eliminar del state
+                const arrayClientes = clientes.filter(cliente => cliente.id !== id);
+                setClientes(arrayClientes);
+
+            } catch (error) {
+                console.log(error);
+            }
+        }
+
+    }
 
     return (
         <>
@@ -47,9 +71,10 @@ const Inicio = () => {
 
                 <tbody>
                     {clientes.map(cliente => (
-                        <Cliente 
+                        <Cliente
                             key={cliente.id}
                             cliente={cliente}
+                            handleEliminar={handleEliminar}
                         />
                     ))}
                 </tbody>

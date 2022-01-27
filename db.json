@@ -2,19 +2,27 @@
   "clientes": [
     {
       "nombre": "Dany",
-      "empresa": "Tour",
+      "empresa": "GG",
       "email": "correo@correo.com",
-      "telefono": "5456465465",
+      "telefono": "456456465",
       "notas": "Hola",
       "id": 1
     },
     {
       "nombre": "Lety",
-      "empresa": "Pape",
-      "email": "correo@gmail.com",
-      "telefono": "797 100 3932",
-      "notas": "",
-      "id": 5
+      "empresa": "Nose",
+      "email": "correo@correo.com",
+      "telefono": "465465465",
+      "notas": "Hola",
+      "id": 2
+    },
+    {
+      "nombre": "Rigo",
+      "empresa": "Nose",
+      "email": "correo@correo.com",
+      "telefono": "456464",
+      "notas": "Hola",
+      "id": 3
     }
   ]
 }
