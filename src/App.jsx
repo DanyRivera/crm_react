@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Layout from './layout/Layout';
 import Inicio from './paginas/Inicio';
@@ -6,6 +7,14 @@ import EditarCliente from './paginas/EditarCliente';
 import VerCliente from './paginas/VerCliente';
 
 function App() {
+
+  useEffect(() => {
+
+    if (window.location.pathname == '/') {
+      window.location.replace(`${import.meta.env.VITE_APP_URL}`)
+    }
+
+  }, [])
 
 
   return (
@@ -19,8 +28,6 @@ function App() {
           <Route path="editar/:id" element={<EditarCliente />} />
           <Route path=":id" element={<VerCliente />} />
         </Route>
-
-        <Route path="*" element={<Layout />} />
 
       </Routes>
 

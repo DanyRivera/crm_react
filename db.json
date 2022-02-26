@@ -1,14 +1,6 @@
 {
   "clientes": [
     {
-      "nombre": "Dany",
-      "empresa": "GG",
-      "email": "correo@correo.com",
-      "telefono": "456456465",
-      "notas": "Hola",
-      "id": 1
-    },
-    {
       "nombre": "Lety",
       "empresa": "Nose",
       "email": "correo@correo.com",
@@ -17,11 +9,11 @@
       "id": 2
     },
     {
-      "nombre": "Rigo",
-      "empresa": "Nose",
+      "nombre": "Dany",
+      "empresa": "XD",
       "email": "correo@correo.com",
-      "telefono": "456464",
-      "notas": "Hola",
+      "telefono": "454456454654",
+      "notas": "dsdddsda",
       "id": 3
     }
   ]

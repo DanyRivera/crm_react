@@ -38,7 +38,7 @@ const Formulario = ({ cliente, cargando }) => {
       } else {
 
         //Nuevo Registrp
-        const url = `${import.meta.env.VITE_API_URL}/`;
+        const url = import.meta.env.VITE_API_URL;
 
         respuesta = await fetch(url, {
           method: 'POST',
